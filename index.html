@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schoolbibliotheek</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="bootstrapAddons.css">
+    <link href="https://cdn.jsdelivr.net/npm/beercss@5.0.3/dist/cdn/beer.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus dignissimos quaerat odio reprehenderit saepe rerum inventore dolorem in tempore id unde, eum totam beatae sed eius quo officia asperiores laborum!</p>
+    <nav class="teal69">
+        <p class="naam"><i class="account">Account_Circle</i>Naam</p>
+        <div class="field large prefix round teal87">
+            <i class="front" style="color: #979797;">search</i>
+            <input placeholder="zoeken" style="color: #979797;">
+        </div>
+        <div style="margin-left: auto; font-size: 1.5rem; gap: 2rem;">
+            <a href="index.html">Home</a>
+            <a href="info.html">Info</a>
+            <a href="Catalogus.html">Boeken</a>
+            <a href="Beheer.html">Beheer</a>
+            <a href="Uitlenen.html">Uitlenen</a>
+            <button type="button" class="teal69" onclick="hehe()"><i class="dark" id="darkswitch">Nightlight</i></button>
+        </div>
+    </nav>
+    <div class="Welkom">
+        <h1>Welkom</h1>
+        <p>Welkom op de officiële GTI schoolbib website. Hier kan je elk boek uit de schoolbibliotheek snel en makkelijk terugvinden</p>
+        <img class="Logo" src="images/logo.png">
+    </div>
+    <div class="Nieuw">
+        <h5><strong>Nieuwe boeken</strong></h5>
+        <div class="NieuweBoeken">
+            <figure>
+                <img src="images/boeken/07-talk-to-your-cat.jpg" style="width: 30%;">
+                <figcaption><p>How to talk to your cat about gun safety</p></figcaption>
+            </figure>
+            <img src="images/boeken/21-walmart-atlas.jpg" style="width: 30%;">
+            <img src="images/boeken/37-dont-sit-on-baby.jpg" style="width: 30%;">
+        </div>
+    </div>
+    <!-- <footer class="teal69">
+        
+    </footer> -->
+
+    <script src="index.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@5.0.3/dist/cdn/beer.min.js"></script>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.4/dist/cdn/material-dynamic-colors.min.js"></script>
 </body>
+
 </html>

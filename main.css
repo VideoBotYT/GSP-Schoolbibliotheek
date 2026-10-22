@@ -5,5 +5,54 @@
 }
 
 :root{
-    
+    --teal69: #009999;
+    --teal87: #008080;
+}
+
+nav {
+    padding: 1rem;
+}
+
+.naam {
+    display: flex;
+    gap: 0.2rem;
+
+    font-size: 2rem;
+}
+
+.dark {
+    color: black !important;
+}
+
+.light {
+    color: white !important;
+}
+
+.Welkom {
+    border-style: solid;
+    border-color: #D3D3D3;
+    width: 100%;
+    text-align: center;
+    padding: 3%;
+    height: fit-content;
+}
+
+.Logo {
+    width: 20%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.Nieuw {
+    border-style: solid;
+    border-color: #D3D3D3;
+    width: 40%;
+    text-align: center;
+    padding: 2%;
+    height: fit-content;
 }
