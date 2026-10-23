@@ -5,3 +5,19 @@
 .teal87{
     background-color: var(--teal87) !important;
 }
+
+.teal15{
+    background-color: #e0f2f1 !important;
+}
+
+.card{
+    border-radius: 32px !important;
+
+    box-shadow: rgba(0, 0, 0, 0.6) 4px 4px 10px;
+
+    transition: transform 0.2s ease-in-out, scale 0.2s ease-out;
+    &:hover{
+        scale: 1.025;
+        transform: translateY(-0.25rem);
+    }
+}

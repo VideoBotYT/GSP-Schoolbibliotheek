@@ -11,6 +11,15 @@
 
 nav {
     padding: 1rem;
+
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+}
+
+main{
+    --_padding: 0 !important;
+    margin-top: 10vh;
 }
 
 .naam {
@@ -42,10 +51,7 @@ nav {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+    margin-top: auto;
 }
 
 .Nieuw {
@@ -55,4 +61,43 @@ footer {
     text-align: center;
     padding: 2%;
     height: fit-content;
+}
+
+.NieuweBoeken{
+    display: grid;
+    grid-template-areas: 
+    "boek1 boek2 boek3";
+    margin: 2rem;
+}
+
+.navbar{
+    margin-left: auto !important;
+    font-size: 1.5rem;
+    gap: 1rem;
+    display: flex;
+}
+
+.BoekvdDag {
+    border-style: solid;
+    border-color: #D3D3D3;
+    width: 40%;
+    text-align: center;
+    padding: 2%;
+    height: fit-content;
+    margin-left: auto;
+
+    div{
+        width: 70%;
+    }
+
+    img {
+        margin: 2rem;
+    }
+}
+
+.filters {
+    padding: 2rem;
+    border-style: solid;
+    border-color: #D3D3D3;
+    padding: 2%;
 }

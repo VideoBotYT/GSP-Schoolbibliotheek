@@ -15,6 +15,9 @@ function hehe() {
         for (let i = 0; i < document.body.children.length; i++){
             document.body.children[i].style.color = "white";
         }
+
+        switcheridou.classList.remove("dark");
+        switcheridou.classList.add("light");
     }
     else {
         switcheridou.textContent = "nightlight";
@@ -22,5 +25,8 @@ function hehe() {
         for (let i = 0; i < document.body.children.length; i++) {
             document.body.children[i].style.color = "black";
         }
+
+        switcheridou.classList.remove("light");
+        switcheridou.classList.add("dark");
     }
 }
