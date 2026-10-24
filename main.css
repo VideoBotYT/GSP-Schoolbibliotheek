@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-:root{
-    --teal69: #009999;
-    --teal87: #008080;
-}
-
 nav {
     padding: 1rem;
 
@@ -22,19 +17,19 @@ main{
     margin-top: 10vh;
 }
 
+select {
+    border: none !important;
+}
+
+button{
+    background-color: #D3D3D3 !important;
+}
+
 .naam {
     display: flex;
     gap: 0.2rem;
 
     font-size: 2rem;
-}
-
-.dark {
-    color: black !important;
-}
-
-.light {
-    color: white !important;
 }
 
 .Welkom {
@@ -96,8 +91,30 @@ footer {
 }
 
 .filters {
+    width: 12%;
     padding: 2rem;
     border-style: solid;
     border-color: #D3D3D3;
     padding: 2%;
+}
+
+.boeken {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.MeerInfo {
+    width: 50% !important;
+    font-size: xx-large !important;
+}
+
+.beschikbaarheid {
+    font-size: x-large !important;
+}
+
+.BoekMetInfo {
+    img {
+        height: 511px;
+    }
 }

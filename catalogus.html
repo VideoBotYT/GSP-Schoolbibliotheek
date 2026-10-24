@@ -20,34 +20,68 @@
         <div class="navbar">
             <a href="index.html">Home</a>
             <a href="info.html">Info</a>
-            <a href="Catalogus.html">Boeken</a>
+            <a href="Catalogus.html" class>Boeken</a>
             <a href="Beheer.html">Beheer</a>
             <a href="Uitlenen.html">Uitlenen</a>
-            <button type="button" class="teal69" onclick="hehe()"><i class="dark" id="darkswitch">Nightlight</i></button>
+            <button type="button" class="teal69" onclick="darkmode()"><i id="darkswitch">Nightlight</i></button>
         </div>
     </nav>
 
     <main style="display: flex;">
         <div class="filters">
             <form>
-                <div class="field suffix border">
+                <div class="field suffix no-border">
                     <select name="" id="">
                         <option value="">a-z</option>
                         <option value="">z-a</option>
                     </select>
-                    <!-- <p>A-Z<i>Arrow_Drop_Down</i></p> -->
+                    <i>Arrow_Drop_Down</i>
                 </div>
-                <label>Genres</label>
-                <br>
-                <input type="checkbox">
-                <label>Humor</label>
-                <br>
-                <input type="checkbox">
-                <label>Humor</label>
-                <br>
-                <input type="checkbox">
-                <label>Humor</label>
+                <details>
+                    <summary>Genres <i>Arrow_Drop_Down</i></summary>
+                    <p class="expansion"><label class="checkbox"><input type="checkbox"><span>Humor</span></label></p>
+                    <p class="expansion"><label class="checkbox"><input type="checkbox"><span>Thriller</span></label></p>
+                    <p class="expansion"><label class="checkbox"><input type="checkbox"><span>Roman</span></label></p>
+                    <p class="expansion"><label class="checkbox"><input type="checkbox"><span>Informatief</span></label></p>
+                    <p class="expansion"><label class="checkbox"><input type="checkbox"><span>Mysterie</span></label></p>
+                    <p class="expansion"><label class="checkbox"><input type="checkbox"><span>Avontuur</span></label></p>
+                </details>
+                <details>
+                    <summary>Schrijver <i>Arrow_Drop_Down</i></summary>
+                    <p class="expansion"><label class="checkbox"><input type="checkbox"><span>Herman Brusselmans</span></label></p>
+                    <p class="expansion"><label class="checkbox"><input type="checkbox"><span>Willy Vandersteen</span></label></p>
+                </details>
+                <details>
+                    <summary>Boek type <i>Arrow_Drop_Down</i></summary>
+                    <p class="expansion"><label class="checkbox"><input type="checkbox"><span>Stripper</span></label></p>
+                    <p class="expansion"><label class="checkbox"><input type="checkbox"><span>Boek</span></label></p>
+                    <p class="expansion"><label class="checkbox"><input type="checkbox"><span>Kinderboek</span></label></p>
+                </details>
             </form>
+        </div>
+        <div class="boeken scroll">
+            <div class="BoekMetInfo">
+                <img src="images/boeken/boek uno.jpg">
+                <h3 class="bold">Suske en Wiske: De mysterieuze cirkel</h3>
+                <h4>Humor</h4>
+                <button class="button MeerInfo">Meer info</button>
+                <p class="beschikbaarheid">5 beschikbaar</p>
+            </div>
+            <div class="BoekMetInfo">
+                <img src="images/boeken/boek does.jpg">
+                <h3 class="bold">Code Lyoko: Het ondergrondse kasteel</h3>
+                <h4>Science fiction</h4>
+                <button class="button MeerInfo">Meer info</button>
+                <p class="beschikbaarheid">3 beschikbaar</p>
+            </div>
+            <div class="BoekMetInfo">
+                <img src="images/boeken/boekjood.webp">
+                <h3 class="bold">Mijn vriend Hitler</h3>
+                <h4>Geschiedenis</h4>
+                <button class="button MeerInfo">Meer info</button>
+                <p class="beschikbaarheid">Uitgeleend</p>
+            </div>
+            
         </div>
     </main>
 

@@ -1,3 +1,18 @@
+:root {
+    body.light {
+        --teal69: #009999;
+        --teal87: #008080;
+        --teal15: #e0f2f1;
+        --on-primary: #000000;
+        --primary: var(--on-primary);
+    }
+
+    body.dark {
+        --on-primary: #ffffff;
+        --primary: var(--on-primary);
+    }
+}
+
 .teal69 {
     background-color: var(--teal69) !important;
 }
@@ -7,7 +22,7 @@
 }
 
 .teal15{
-    background-color: #e0f2f1 !important;
+    background-color: var(--teal15) !important;
 }
 
 .card{
@@ -15,9 +30,15 @@
 
     box-shadow: rgba(0, 0, 0, 0.6) 4px 4px 10px;
 
-    transition: transform 0.2s ease-in-out, scale 0.2s ease-out;
+    transition: transform 0.2s ease-in-out, scale 0.2s ease-out, box-shadow 0.2s ease-in-out;
     &:hover{
         scale: 1.025;
         transform: translateY(-0.25rem);
+        box-shadow: rgba(0, 0, 0, 0.6) 0px 10px 10px;
     }
+}
+
+.expansion {
+    margin: 0;
+    padding: 0;
 }
