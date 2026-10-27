@@ -1,0 +1,29 @@
+@media screen and (min-width: 1880px) {
+    main {
+        margin-top: 5vw;
+    }
+}
+
+@media screen and (max-width: 1880px){
+    main{
+        margin-top: 6vw;
+    }
+}
+
+@media screen and (max-width: 1440px){
+    main{
+        margin-top: 7vw;
+    }
+}
+
+@media screen and (max-width: 1270px){
+    main{
+        margin-top: 8vw;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    main{
+        margin-top: 9vw;
+    }
+}

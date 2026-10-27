@@ -13,8 +13,7 @@ nav {
 }
 
 main{
-    --_padding: 0 !important;
-    margin-top: 10vh;
+    margin-top: 5vw;
 }
 
 select {
@@ -52,17 +51,29 @@ footer {
 .Nieuw {
     border-style: solid;
     border-color: #D3D3D3;
-    width: 40%;
+    width: 50%;
     text-align: center;
     padding: 2%;
     height: fit-content;
 }
 
 .NieuweBoeken{
-    display: grid;
-    grid-template-areas: 
-    "boek1 boek2 boek3";
+    display: flex;
+    gap: 2rem;
+
+    align-items: center;
+
     margin: 2rem;
+
+    div {
+        height: 60%;
+        width: 100%;
+
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 .navbar{
@@ -92,10 +103,11 @@ footer {
 
 .filters {
     width: 12%;
-    padding: 2rem;
+    padding: 1rem;
     border-style: solid;
     border-color: #D3D3D3;
-    padding: 2%;
+    
+    margin-right: 2rem;
 }
 
 .boeken {
@@ -115,6 +127,6 @@ footer {
 
 .BoekMetInfo {
     img {
-        height: 511px;
+        height: 30% !important;
     }
 }
