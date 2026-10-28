@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uitlenen</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="bootstrapAddons.css">
+    <link rel="stylesheet" href="resolution.css">
+    <link href="https://cdn.jsdelivr.net/npm/beercss@5.0.3/dist/cdn/beer.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="teal69">
+        <p class="naam"><i class="account">Account_Circle</i>Naam</p>
+        <div class="field large prefix round teal87">
+            <i class="front" style="color: #979797;">search</i>
+            <input placeholder="zoeken" style="color: #979797;">
+        </div>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="info.html">Info</a>
+            <a href="Catalogus.html">Catalogus</a>
+            <a href="Leden.html">Leden</a>
+            <a href="Uitlenen.html">Uitlenen</a>
+            <button type="button" class="teal69 ripple" onclick="darkmode()">
+                <i id="darkswitch">Nightlight</i>
+                <span class="tooltip bottom">Darkmode</span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <table class="ledenTabel">
+            <caption><h4>Leners</h4></caption>
+            <thead>
+                <th>Naam</th>
+                <th>Boek</th>
+                <th>Kopie</th>
+                <th>Uitleen Periode</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jos Vermeulen</td>
+                    <td>Mijn vriend Hitler</td>
+                    <td>1</td>
+                    <td>28/10/2026 - 18/11/2026</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="teal15">
+        <p>&copy; De website is eigendom van GTI Beveren<br><strong>Nathan Smeets en Lander Meersman
+                6ADB</strong><br>Schooljaar 2026 - 2027</p>
+    </footer>
+
+    <script src="index.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@5.0.3/dist/cdn/beer.min.js"></script>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.4/dist/cdn/material-dynamic-colors.min.js"></script>
+</body>
+
+</html>

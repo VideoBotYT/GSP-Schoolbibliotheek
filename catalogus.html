@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <title>catalogus</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="bootstrapAddons.css">
+    <link rel="stylesheet" href="resolution.css">
     <link href="https://cdn.jsdelivr.net/npm/beercss@5.0.3/dist/cdn/beer.min.css" rel="stylesheet">
 </head>
 
@@ -23,7 +24,10 @@
             <a href="Catalogus.html" class>Catalogus</a>
             <a href="Leden.html">Leden</a>
             <a href="Uitlenen.html">Uitlenen</a>
-            <button type="button" class="teal69" onclick="darkmode()"><i id="darkswitch">Nightlight</i></button>
+            <button type="button" class="teal69 ripple" onclick="darkmode()">
+                <i id="darkswitch">Nightlight</i>
+                <span class="tooltip bottom">Darkmode</span>
+            </button>
         </div>
     </nav>
 
@@ -63,21 +67,21 @@
                 <img src="images/boeken/boek uno.jpg">
                 <h3 class="bold">Suske en Wiske: De mysterieuze cirkel</h3>
                 <h4>Humor</h4>
-                <button class="button MeerInfo">Meer info</button>
+                <button class="button MeerInfo teal40">Meer info</button>
                 <p class="beschikbaarheid">5 beschikbaar</p>
             </div>
             <div class="BoekMetInfo">
                 <img src="images/boeken/boek does.jpg">
                 <h3 class="bold">Code Lyoko: Het ondergrondse kasteel</h3>
                 <h4>Science fiction</h4>
-                <button class="button MeerInfo">Meer info</button>
+                <button class="button MeerInfo teal40">Meer info</button>
                 <p class="beschikbaarheid">3 beschikbaar</p>
             </div>
             <div class="BoekMetInfo">
                 <img src="images/boeken/boekjood.webp">
                 <h3 class="bold">Mijn vriend Hitler</h3>
                 <h4>Geschiedenis</h4>
-                <button class="button MeerInfo">Meer info</button>
+                <button class="button MeerInfo teal40">Meer info</button>
                 <p class="beschikbaarheid">Uitgeleend</p>
             </div>
             

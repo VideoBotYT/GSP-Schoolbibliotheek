@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <title>info</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="bootstrapAddons.css">
+    <link rel="stylesheet" href="resolution.css">
     <link href="https://cdn.jsdelivr.net/npm/beercss@5.0.3/dist/cdn/beer.min.css" rel="stylesheet">
 </head>
 
@@ -23,12 +24,15 @@
             <a href="Catalogus.html">Catalogus</a>
             <a href="Leden.html">Leden</a>
             <a href="Uitlenen.html">Uitlenen</a>
-            <button type="button" class="teal69" onclick="darkmode()"><i class="dark" id="darkswitch">Nightlight</i></button>
+            <button type="button" class="teal69 ripple" onclick="darkmode()">
+                <i id="darkswitch">Nightlight</i>
+                <span class="tooltip bottom">Darkmode</span>
+            </button>
         </div>
     </nav>
 
     <main>
-        <article style="text-align: center; width: 60%; margin: auto;">
+        <article style="text-align: center; width: 60%; margin: auto; background-color: var(--teal15);">
             <h4>Informatie</h4>
             <p>Localtie: <strong>K108</strong></p>
             <p>Eigenaar: <strong>Bea Wauters</strong></p>
