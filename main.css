@@ -112,8 +112,9 @@ footer {
 
 .boeken {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));;
+    /* grid-template-rows: 1fr !important; */
+    gap: 40px !important;
 }
 
 .MeerInfo {
@@ -127,7 +128,10 @@ footer {
 
 .BoekMetInfo {
     img {
-        height: 30% !important;
+        /* width: 100%; */
+        height: 300px;
+        object-fit: cover;
+        display: block;
     }
 }
 
