@@ -9,6 +9,7 @@
         /* beercss colors */
         --on-primary: #000000;
         --primary: var(--on-primary);
+        --surface: #ffffff;
     }
 
     body.dark {
@@ -19,6 +20,7 @@
 
         --on-primary: #ffffff;
         --primary: var(--on-primary);
+        --surface: #141316;
     }
 }
 
