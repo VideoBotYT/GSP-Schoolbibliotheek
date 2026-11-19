@@ -19,11 +19,11 @@
             <input placeholder="zoeken" style="color: #979797;">
         </div>
         <div class="navbar">
-            <a href="index.html">Home</a>
-            <a href="info.html">Info</a>
+            <a href="home.php">Home</a>
+            <a href="info.php">Info</a>
             <a href="catalogus.html">Catalogus</a>
-            <a href="leden.html">Leden</a>
-            <a href="uitlenen.html">Uitlenen</a>
+            <a href="leden.php">Leden</a>
+            <a href="uitlenen.php">Uitlenen</a>
             <button type="button" class="teal69 ripple" onclick="darkmode()">
                 <i id="darkswitch">Nightlight</i>
                 <span class="tooltip bottom">Darkmode</span>
