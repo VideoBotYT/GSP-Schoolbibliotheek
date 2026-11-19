@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>info</title>
+    <title>Uitlenen</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="bootstrapAddons.css">
     <link rel="stylesheet" href="resolution.css">
@@ -19,10 +19,10 @@
             <input placeholder="zoeken" style="color: #979797;">
         </div>
         <div class="navbar">
-            <a href="index.html">Home</a>
-            <a href="info.html">Info</a>
-            <a href="catalogus.html">Catalogus</a>
-            <a href="leden.html">Leden</a>
+            <a href="home.php">Home</a>
+            <a href="info.php">Info</a>
+            <a href="catalogus.php">Catalogus</a>
+            <a href="leden.php">Leden</a>
             <a href="uitlenen.html">Uitlenen</a>
             <button type="button" class="teal69 ripple" onclick="darkmode()">
                 <i id="darkswitch">Nightlight</i>
@@ -32,12 +32,23 @@
     </nav>
 
     <main>
-        <article style="text-align: center; width: 60%; margin: auto; background-color: var(--teal15);">
-            <h4>Informatie</h4>
-            <p>Localtie: <strong>K108</strong></p>
-            <p>Eigenaar: <strong>Bea Wauters</strong></p>
-            <p>Openingsuren: <strong>Elke middagpauze van 12:00 tot 12:40</strong></p>
-        </article>
+        <table class="ledenTabel">
+            <caption><h4>Leners</h4></caption>
+            <thead>
+                <th>Naam</th>
+                <th>Boek</th>
+                <th>Kopie</th>
+                <th>Uitleen Periode</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jos Vermeulen</td>
+                    <td>Mijn vriend Hitler</td>
+                    <td>1</td>
+                    <td>28/10/2026 - 18/11/2026</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
 
     <footer class="teal15">

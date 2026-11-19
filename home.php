@@ -1,3 +1,8 @@
+<?php
+session_start();
+$name= $_SESSION['name'];
+?>
+
 <!DOCTYPE html>
 <html lang="nl">
 
@@ -13,17 +18,17 @@
 
 <body>
     <nav class="teal69">
-        <p class="naam"><i class="account">Account_Circle</i>Naam</p>
+        <p class="naam"><i class="account">Account_Circle</i><?=$name?></p>
         <div class="field large prefix round teal87">
             <i class="front" style="color: #979797;">search</i>
             <input placeholder="zoeken" style="color: #979797;">
         </div>
         <div class="navbar">
-            <a href="index.html">Home</a>
-            <a href="info.html">Info</a>
-            <a href="catalogus.html">Catalogus</a>
-            <a href="leden.html">Leden</a>
-            <a href="uitlenen.html">Uitlenen</a>
+            <a href="home.php">Home</a>
+            <a href="info.php">Info</a>
+            <a href="catalogus.php">Catalogus</a>
+            <a href="leden.php">Leden</a>
+            <a href="uitlenen.php">Uitlenen</a>
             <button type="button" class="teal69 ripple" onclick="darkmode()">
                 <i id="darkswitch">Nightlight</i>
                 <span class="tooltip bottom">Darkmode</span>
