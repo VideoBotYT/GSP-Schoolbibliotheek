@@ -45,6 +45,10 @@ session_start();
                     </select>
                     <i>Arrow_Drop_Down</i>
                 </div>
+                <div class="field prefix round" style="margin: 0;">
+                    <i class="front" style="color: #979797;">search</i>
+                    <input placeholder="schrijver" style="color: #979797; border:none; background-color: transparent; box-shadow: none;">
+                </div>
                 <details>
                     <summary>Genres <i>Arrow_Drop_Down</i></summary>
                     <p class="expansion"><label class="checkbox"><input type="checkbox"><span>Humor</span></label></p>
@@ -54,10 +58,6 @@ session_start();
                     <p class="expansion"><label class="checkbox"><input type="checkbox"><span>Mysterie</span></label></p>
                     <p class="expansion"><label class="checkbox"><input type="checkbox"><span>Avontuur</span></label></p>
                 </details>
-                <div class="field prefix round" style="margin: 0;">
-                    <i class="front" style="color: #979797;">search</i>
-                    <input placeholder="schrijver" style="color: #979797; border:none; background-color: transparent; box-shadow: none;">
-                </div>
                 <details>
                     <summary>Boek type <i>Arrow_Drop_Down</i></summary>
                     <p class="expansion"><label class="checkbox"><input type="checkbox"><span>Stripper</span></label></p>

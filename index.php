@@ -13,7 +13,7 @@ if (!empty($_POST['mail']) && !empty($_POST['password'])) {
         $account = $statement->fetch();
 
         $_SESSION['name'] = $account['voornaam'];
-        echo $_SESSION['name'];
+        //echo $_SESSION['name'];
 
         $connection = null;
     } catch (PDOException $e) {
@@ -55,7 +55,7 @@ if (!empty($_POST['mail']) && !empty($_POST['password'])) {
         2026 - 2027</p>
 </footer>
 
-<script src="index.js"></script>
+<!--<script src="index.js"></script>-->
 <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@5.0.3/dist/cdn/beer.min.js"></script>
 <script type="module"
         src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.4/dist/cdn/material-dynamic-colors.min.js"></script>
