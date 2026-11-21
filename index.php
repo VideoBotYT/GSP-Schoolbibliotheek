@@ -1,10 +1,10 @@
 <?php
-require_once "api/connection.php";
-
 session_start();
 if (!empty($_POST['mail']) && !empty($_POST['password'])) {
     $inputMail = $_POST['mail'];
     $inputPassword = $_POST['password'];
+
+    require_once "api/connection.php";
 
     try {
         $query = "SELECT voornaam, email, wachtwoord FROM accounts WHERE email = :mail AND wachtwoord = :password";
@@ -14,6 +14,8 @@ if (!empty($_POST['mail']) && !empty($_POST['password'])) {
 
         $_SESSION['name'] = $account['voornaam'];
         echo $_SESSION['name'];
+
+        $connection = null;
     } catch (PDOException $e) {
         print "<p>Ongeldige mail of wachtwoord!</p> " . $e->getMessage();
     }

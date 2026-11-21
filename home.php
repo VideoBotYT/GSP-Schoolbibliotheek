@@ -1,6 +1,5 @@
 <?php
 session_start();
-$name= $_SESSION['name'];
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +17,7 @@ $name= $_SESSION['name'];
 
 <body>
     <nav class="teal69">
-        <p class="naam"><i class="account">Account_Circle</i><?=$name?></p>
+        <p class="naam"><i class="account">Account_Circle</i><?=$_SESSION['name']?></p>
         <div class="field large prefix round teal87">
             <i class="front" style="color: #979797;">search</i>
             <input placeholder="zoeken" style="color: #979797;">

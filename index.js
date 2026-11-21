@@ -1,13 +1,17 @@
 const darswitch = document.getElementById("darkswitch");
-let darktoggle = false;
 
-document.body.classList.add((darktoggle) ? "dark" : "light");
+if (localStorage.getItem("darkmode") == null) {
+    localStorage.setItem("darkmode", false.toString());
+}
+let darktoggle = (localStorage.getItem("darkmode") !== "false");
 for (let i = 0; i < document.body.children.length; i++) {
+    darswitch.textContent = (darktoggle) ? "sunny" : "nightlight";
     document.body.children[i].classList.add((darktoggle) ? "dark" : "light");
 }
 
 function darkmode() {
-    darktoggle = !darktoggle;
+    darktoggle = (localStorage.getItem("darkmode") === "false");
+    localStorage.setItem("darkmode", darktoggle.toString());
 
     darswitch.textContent = (darktoggle) ? "sunny" : "nightlight";
     document.body.classList.remove((darktoggle) ? "light" : "dark");

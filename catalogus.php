@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="nl">
 
@@ -13,7 +17,7 @@
 
 <body>
     <nav class="teal69">
-        <p class="naam"><i class="account">Account_Circle</i>Naam</p>
+        <p class="naam"><i class="account">Account_Circle</i><?=$_SESSION['name']?></p>
         <div class="field large prefix round teal87">
             <i class="front" style="color: #979797;">search</i>
             <input placeholder="zoeken" style="color: #979797;">
