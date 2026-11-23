@@ -1,7 +1,7 @@
 const darswitch = document.getElementById("darkswitch");
 
 if (localStorage.getItem("darkmode") == null) {
-    localStorage.setItem("darkmode", false.toString());
+    localStorage.setItem("darkmode", false);
 }
 
 applyDark(localStorage.getItem("darkmode") === "true");
