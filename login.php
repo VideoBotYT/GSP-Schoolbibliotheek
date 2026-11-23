@@ -16,6 +16,8 @@ if (!empty($_POST['mail']) && !empty($_POST['password'])) {
         //echo $_SESSION['name'];
 
         $connection = null;
+
+        header('Location: home.php');
     } catch (PDOException $e) {
         print "<p>Ongeldige mail of wachtwoord!</p> " . $e->getMessage();
     }
@@ -36,15 +38,19 @@ if (!empty($_POST['mail']) && !empty($_POST['password'])) {
 </head>
 
 <body>
+<button type="button" class="teal69 ripple" onclick="darkmode()">
+    <i id="darkswitch">Nightlight</i>
+    <span class="tooltip bottom">Darkmode</span>
+</button>
 <main style="margin-top: 0;">
-    <form action="home.php" method="post">
+    <form method="post">
         <label>
             email:
             <input type="email" name="mail">
         </label><br>
         <label>
             wachtwoord:
-            <input type="text" name="password">
+            <input type="password" name="password">
         </label>
         <button type="submit">Login</button>
     </form>
@@ -55,7 +61,7 @@ if (!empty($_POST['mail']) && !empty($_POST['password'])) {
         2026 - 2027</p>
 </footer>
 
-<!--<script src="index.js"></script>-->
+<script src="index.js"></script>
 <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@5.0.3/dist/cdn/beer.min.js"></script>
 <script type="module"
         src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.4/dist/cdn/material-dynamic-colors.min.js"></script>
