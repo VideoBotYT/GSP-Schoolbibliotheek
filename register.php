@@ -33,6 +33,10 @@ if (!empty($_POST['mail']) && !empty($_POST['password'] && !empty($_POST['firstn
 </head>
 
 <body>
+<button type="button" class="teal69 ripple" onclick="darkmode()">
+    <i id="darkswitch">Nightlight</i>
+    <span class="tooltip bottom">Darkmode</span>
+</button>
 <main style="margin-top: 0;">
     <form method="post">
         <label>
@@ -49,11 +53,11 @@ if (!empty($_POST['mail']) && !empty($_POST['password'] && !empty($_POST['firstn
         </label><br>
         <label>
             wachtwoord:
-            <input type="text" name="password" required>
+            <input type="password" name="password" required>
         </label>
         <button type="submit">Sign Up</button>
     </form>
-    <p>Heb je al een account? <a href="index.php" style="color: blue; text-decoration: underline;">Login</a></p>
+    <p>Heb je al een account? <a href="login.php" style="color: blue; text-decoration: underline;">Login</a></p>
 </main>
 <footer class="teal15">
     <p>&copy; De website is eigendom van GTI Beveren<br><strong>Nathan Smeets en Lander Meersman 6ADB</strong><br>Schooljaar 2026 - 2027</p>
