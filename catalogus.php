@@ -82,13 +82,6 @@ session_start();
                 <p class="beschikbaarheid">3 beschikbaar</p>
             </div>
             <div class="BoekMetInfo">
-                <img src="images/boeken/boekjood.webp">
-                <h3 class="bold">Mijn vriend Hitler</h3>
-                <h4>Geschiedenis</h4>
-                <button class="button MeerInfo teal40">Meer info</button>
-                <p class="beschikbaarheid">Uitgeleend</p>
-            </div>
-            <div class="BoekMetInfo">
                 <img src="images/boeken/harry.jpeg">
                 <h3 class="bold">Harry Potter En de steen der wijzen</h3>
                 <h4>Fantasie</h4>
