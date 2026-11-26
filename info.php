@@ -41,6 +41,7 @@ session_start();
             <p>Localtie: <strong>K108</strong></p>
             <p>Eigenaar: <strong>Bea Wauters</strong></p>
             <p>Openingsuren: <strong>Elke middagpauze van 12:00 tot 12:40</strong></p>
+            <p>Boeken donneren: <strong>Donaties zijn anoniem mogelijk</strong></p>
         </article>
     </main>
 
